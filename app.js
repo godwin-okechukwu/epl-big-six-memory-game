@@ -64,7 +64,7 @@ cardsArray.sort(() => 0.5 - Math.random())
 function createBoard() {
   for(let i =0; i < cardsArray.length; i++) {
     var card = document.createElement('img')
-    card.setAttribute('src', 'images/plank.png')
+    card.setAttribute('src', 'images/epl.png')
     card.setAttribute('data-id', i)
     card.addEventListener('click', flipCard)
     grid.appendChild(card)
@@ -82,8 +82,8 @@ function checkForMatch() {
      cards[optionTwoId].setAttribute('src', 'images/white1.png')
      cardsWon.push(cardsChosen)
   } else {
-    cards[optionOneId].setAttribute('src', 'images/plank.png')
-    cards[optionTwoId].setAttribute('src', 'images/plank.png')
+    cards[optionOneId].setAttribute('src', 'images/epl.png')
+    cards[optionTwoId].setAttribute('src', 'images/epl.png')
     alert('Sorry, try again!')
   }
   cardsChosen = []
